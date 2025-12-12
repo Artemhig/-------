@@ -2,7 +2,6 @@
 #include <stdlib.h>
 #include <time.h>
 
-// Сортировка пузырьком
 void bubbleSort(int arr[], int n) {
     for (int i = 0; i < n-1; i++) {
         for (int j = 0; j < n-i-1; j++) {
@@ -15,7 +14,6 @@ void bubbleSort(int arr[], int n) {
     }
 }
 
-// Сортировка вставками
 void insertionSort(int arr[], int n) {
     for (int i = 1; i < n; i++) {
         int key = arr[i];
@@ -28,7 +26,6 @@ void insertionSort(int arr[], int n) {
     }
 }
 
-// Функция слияния для сортировки слиянием
 void merge(int arr[], int left, int mid, int right) {
     int n1 = mid - left + 1;
     int n2 = right - mid;
@@ -131,4 +128,5 @@ int main() {
     }
     
     return 0;
+
 }
